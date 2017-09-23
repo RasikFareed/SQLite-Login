@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtDash"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:layout_marginTop="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:id="@+id/btnGridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Grid View"
+        android:layout_below="@+id/txtDash"
+        android:layout_alignLeft="@+id/btnHorizontalView"
+        android:layout_alignStart="@+id/btnHorizontalView"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/btnListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="List View"
+        android:layout_below="@+id/btnGridView"
+        android:layout_alignRight="@+id/btnGridView"
+        android:layout_alignEnd="@+id/btnGridView" />
+    <Button
+        android:id="@+id/btnHorizontalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Horizontal View"
+        android:layout_below="@+id/btnListView"
+        android:layout_alignRight="@+id/btnFrag"
+        android:layout_alignEnd="@+id/btnFrag" />
+
+    <Button
+        android:id="@+id/btnFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Fragment Activity"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_below="@+id/btnHorizontalView"
+        android:layout_toLeftOf="@+id/btnLogout"
+        android:layout_toStartOf="@+id/btnLogout" />
+</RelativeLayout>
